@@ -5,8 +5,11 @@
 using namespace std;
 
 bool sortByWeight(pair<int,int> i, pair<int,int> j) {
+   /*
    if (i.second != j.second) { return i.second > j.second; }
    else { return i.first < j.first; }
+   */
+   return i.first < j.first;
 }
 
 int main() {
@@ -39,10 +42,13 @@ int main() {
         }
 
         cout << "Case #" << t+1 << ": " << maxValue << endl;
+
+        /*
         for (int n = 0; n != N; ++n) {
             cout << "Weight: " << loot[n].first << " Value: " << loot[n].second << endl;
         }
+        */
+
     }
     return 0;
 }
-
