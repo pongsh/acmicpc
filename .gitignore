@@ -1,4 +1,5 @@
-*.out
-*.in
+*.out*
+*.in*
 test.cpp
 out
+*.exe
